@@ -21,7 +21,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 21px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .tarifs {
@@ -53,6 +53,14 @@
     font-weight: 400;
     color: gray;  
 }
+
+.check_tarif {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: black; 
+}
+
 
 .input {
     vertical-align: top;

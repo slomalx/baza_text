@@ -3,6 +3,7 @@ const lite = document.getElementById('lite_button');
 const medium = document.getElementById('medium_button');
 const goida = document.getElementById('goida_button');
 const baza = document.getElementById('baza_button');
+const check = document.querySelector('.check_tarif')
 
 
 let selectedMode = null;
@@ -28,19 +29,19 @@ function setActiveMode(mode) {
 lite.addEventListener('click', () => {
     selectedMode = 'lite';
     setActiveMode('lite');
-    console.log('Выбран режим: Lite');
+    check.textContent = 'Выбрана ЛАЙТ БАZА'
 });
 
 medium.addEventListener('click', () => {
     selectedMode = 'medium';
     setActiveMode('medium');
-    console.log('Выбран режим: Medium');
+    check.textContent = 'Выбрана МЕДИУМ БАZА'
 });
 
 goida.addEventListener('click', () => {
     selectedMode = 'goida';
     setActiveMode('goida');
-    console.log('Выбран режим: Goida');
+    check.textContent = 'Выбрана ГОЙДА БАZА'
 });
 
 
