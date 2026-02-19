@@ -84,7 +84,7 @@ baza.addEventListener('click', function() {
     count++;
     const originalText = textarea.value;
     let bazedText = originalText;
-    if (count === 1) {
+    if (count === 1  || (textarea.value).length !== savedText.length) {
         savedText = originalText;
     }
     
