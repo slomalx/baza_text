@@ -3,10 +3,14 @@ const lite = document.getElementById('lite_button');
 const medium = document.getElementById('medium_button');
 const goida = document.getElementById('goida_button');
 const baza = document.getElementById('baza_button');
-const check = document.querySelector('.check_tarif')
+const check = document.querySelector('.check_tarif');
+const reset = document.getElementById('reset');
 
 
 let selectedMode = null;
+let originalText = '';
+
+
 
 
 function setActiveMode(mode) {
@@ -72,10 +76,14 @@ function replaceGoida(text) {
 }
 
 
+
+
+
 baza.addEventListener('click', function() {
 
-    const originalText = textarea.value;
+    originalText = textarea.value;
     let bazedText = originalText;
+    
     
     if (!selectedMode) {
         alert('Выберите баZOVость');
@@ -94,3 +102,9 @@ baza.addEventListener('click', function() {
     
 
 });
+
+reset.addEventListener('click', function() {
+    
+    textarea.value = originalText;
+    
+})
