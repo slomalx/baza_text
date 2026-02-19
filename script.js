@@ -8,7 +8,8 @@ const reset = document.getElementById('reset');
 
 
 let selectedMode = null;
-let originalText = '';
+let savedText = textarea.value;
+let count = 0;
 
 
 
@@ -80,9 +81,13 @@ function replaceGoida(text) {
 
 
 baza.addEventListener('click', function() {
-
-    originalText = textarea.value;
+    count++;
+    const originalText = textarea.value;
     let bazedText = originalText;
+    if (count === 1) {
+        savedText = originalText;
+    }
+    
     
     
     if (!selectedMode) {
@@ -105,6 +110,6 @@ baza.addEventListener('click', function() {
 
 reset.addEventListener('click', function() {
     
-    textarea.value = originalText;
+    textarea.value = savedText;
     
 })
