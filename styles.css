@@ -102,9 +102,33 @@ body {
     
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .flex {
+        display: inline;
+    }
+
+
+    
+}
+
+
 .down_buttons {
     display: flex;
     gap: 30px;
+}
+
+.manya {
+    width: 250px;
+    background-color: red;
+}
+
+.manya:hover {
+    background-color: black;
 }
 
 @media (max-width: 470px) {
@@ -136,6 +160,11 @@ body {
 .link {
    color: #1100AD;
    text-decoration: underline;
+}
+
+.pic {
+    width: 500px;
+    margin-bottom: 30px;
 }
 
 
