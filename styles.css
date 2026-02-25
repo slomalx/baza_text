@@ -163,8 +163,43 @@ body {
 }
 
 .pic {
+    display: block;
     width: 500px;
     margin-bottom: 30px;
 }
 
+.manifest_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
+@media (max-width: 1200px) {
+    .manifest_content {
+        display: block;
+    }
+}
+
+
+p {
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black; 
+    width: 600px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width:650px) {
+    p {
+        width: 100%;
+    }
+
+    .pic {
+    
+    width: 100%;
+    
+}
+}
